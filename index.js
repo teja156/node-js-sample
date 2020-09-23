@@ -5,7 +5,8 @@ app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
-  response.send('Hello World!')
+  var toDisp = "Name : P. Teja Swaroop\n Regno : 17MIS1003\n Course : M.Tech integrated software engineering\n Year of Graduating : 2022";
+  response.send(toDisp);
 })
 
 app.listen(app.get('port'), function() {
